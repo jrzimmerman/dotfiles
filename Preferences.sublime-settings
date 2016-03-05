@@ -1,6 +1,13 @@
 {
-  "color_scheme": "Packages/User/SublimeLinter/Material-Theme-OceanicNext (SL).tmTheme",
+  "color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
   "font_size": 16,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
   "tab_size": 2,
-  "translate_tabs_to_spaces": true
+  "theme": "Default.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "word_wrap": false
 }

@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 ########################################
 
 DEFAULT_USER="justin"
+EDITOR="subl -n -w"
 
 export PATH="/usr/local/bin:$PATH"
 

@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Meslo LG M for Powerline", Monaco, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: '"Meslo LG L DZ for Powerline", Monaco, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.75)',
@@ -22,7 +22,7 @@ module.exports = {
     borderColor: '#333',
 
     // size of window by pixels (width, height)
-     windowSize: [1300, 650],
+     windowSize: [1000, 500],
 
     // custom css to embed in the main window
     css: '',
@@ -70,7 +70,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyperterm-solarized-dark',
-    'hyperlinks'
+    'hyperlinks',
+    'hyperterm-tab-icons'
   ],
 
   // in development, you can create a directory under

@@ -25,7 +25,6 @@ export PATH="/usr/local/bin:$PATH"
 # Golang
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
-export GO15VENDOREXPERIMENT=1
 
 # Android SDK
 export ANDROID_HOME=~/Library/Android/sdk

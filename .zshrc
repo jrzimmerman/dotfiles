@@ -121,3 +121,6 @@ export NVM_DIR="$HOME/.nvm"
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# yarn https://yarnpkg.com/
+export PATH="~/.yarn/bin:$PATH"

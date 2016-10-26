@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # custom settings
 ########################################################
 DEFAULT_USER="jzimmerman"
-EDITOR="code -nw"
+export EDITOR="code -nw"
 
 WHOAMI=$(whoami)
 export PATH=/usr/share/www/intranet.directstartv.com/scripts/srcsync-dir:/usr/local/bin:/usr/share/www/devops/scripts:$PATH

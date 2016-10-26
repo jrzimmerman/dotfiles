@@ -23,7 +23,7 @@ PROMPT_COMMAND=gitprompt
 export PATH="/usr/local/bin:$PATH"
 
 # Golang
-export GOPATH=~/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # Android SDK

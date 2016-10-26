@@ -96,9 +96,8 @@ export NODE_PATH="/usr/local/bin/node:/usr/local/lib/node_modules:{$WHOAMI}/lib/
 export NODE_ENV=development
 
 # Golang
-export GOPATH=~/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export GO15VENDOREXPERIMENT=1
 
 # Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
 PATH=/usr/local/sbin:$PATH

@@ -4,7 +4,7 @@
 [color]
   ui = auto
 [core]
-  editor = atom -nw
+  editor = code -nw
   autocrlf = input
   safecrlf = true
 [help]

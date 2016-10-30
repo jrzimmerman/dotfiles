@@ -87,13 +87,10 @@ source $ZSH/oh-my-zsh.sh
 ########################################################
 # custom settings
 ########################################################
-DEFAULT_USER="jzimmerman"
+DEFAULT_USER="justin"
 export EDITOR="code -nw"
 
-WHOAMI=$(whoami)
-export PATH=/usr/share/www/intranet.directstartv.com/scripts/srcsync-dir:/usr/local/bin:/usr/share/www/devops/scripts:$PATH
-export NODE_PATH="/usr/local/bin/node:/usr/local/lib/node_modules:{$WHOAMI}/lib/node_modules"
-export NODE_ENV=development
+export PATH="/usr/local/bin:$PATH"
 
 # Golang
 export GOPATH=$HOME/go
@@ -119,4 +116,5 @@ export NVM_DIR="$HOME/.nvm"
 # Recursively delete `.DS_Store` files
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
+# RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

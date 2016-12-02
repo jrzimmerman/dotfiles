@@ -109,6 +109,10 @@ fi
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+# Java
+export JAVA_HOME=~/Library/Java/JavaVirtualMachines
+export JDK_HOME=~/Library/Java/JavaVirtualMachines
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm

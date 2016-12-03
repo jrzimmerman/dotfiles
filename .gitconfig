@@ -4,7 +4,7 @@
 [color]
   ui = auto
 [core]
-  editor = code -nw
+  editor = subl -n -w
   autocrlf = input
   safecrlf = true
 [help]

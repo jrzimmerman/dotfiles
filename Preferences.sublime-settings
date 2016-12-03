@@ -1,7 +1,9 @@
 {
-  "color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
+  "color_scheme": "Packages/User/SublimeLinter/One Dark (SL).tmTheme",
+  "font_face": "SourceCodePro-Regular",
   "font_size": 16,
   "highlight_modified_tabs": true,
+  "ignore_vcs_packages": true,
   "ignored_packages":
   [
     "Vintage"

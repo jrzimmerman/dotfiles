@@ -121,3 +121,6 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Yarn
+export PATH="$PATH:`yarn global bin`"

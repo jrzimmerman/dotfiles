@@ -40,3 +40,6 @@ export NVM_DIR="$HOME/.nvm"
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Yarn
+export PATH="$PATH:`yarn global bin`"

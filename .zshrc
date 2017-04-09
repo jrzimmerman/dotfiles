@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jzimmerman/.oh-my-zsh
+export ZSH=/Users/justin/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -84,9 +84,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-########################################################
+
+########################################
 # custom settings
-########################################################
+########################################
 DEFAULT_USER="justin"
 export EDITOR="code -nw"
 
@@ -108,9 +109,6 @@ fi
 # Android SDK
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

@@ -97,9 +97,19 @@ export PATH="/usr/local/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
+PATH=/usr/local/sbin:$PATH
+PATH=$HOME/bin:$PATH
+export PATH
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
 # Android SDK
-export ANDROID_HOME=~/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -107,9 +117,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Recursively delete `.DS_Store` files
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
-
-# RVM
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Yarn
 export PATH="$PATH:`yarn global bin`"

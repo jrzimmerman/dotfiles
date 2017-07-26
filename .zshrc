@@ -90,16 +90,15 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="justin"
 export EDITOR="code -nw"
 
-export PATH="/usr/local/bin:$PATH"
+# Homebrew
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 # Golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
-PATH=/usr/local/sbin:$PATH
-PATH=$HOME/bin:$PATH
-export PATH
+# Python
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # Android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -109,9 +108,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
-# Recursively delete `.DS_Store` files
-alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Yarn
 export PATH="$PATH:`yarn global bin`"

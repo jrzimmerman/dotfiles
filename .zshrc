@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # custom settings
 ########################################
 DEFAULT_USER="justin"
-export EDITOR="code -nw"
+export EDITOR="vim"
 
 # Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH

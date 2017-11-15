@@ -17,7 +17,7 @@ call plug#end()
 """"""""""""""""""""""
 set encoding=utf-8              " Set default encoding to UTF-8
 set autoread                    " Automatically read changed files
-set autoindent                  " Enabile Autoindent
+set autoindent                  " Enable Autoindent
 set incsearch                   " Shows the match while typing
 set hlsearch                    " Highlight found searches
 set number                      " Show line numbers

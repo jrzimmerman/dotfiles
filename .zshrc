@@ -111,3 +111,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Yarn
 export PATH="$PATH:`yarn global bin`"
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"

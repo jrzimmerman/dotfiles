@@ -16,6 +16,11 @@ set hlsearch                    " Highlight found searches
 set number                      " Show line numbers
 set showcmd                     " Show me what I'm typing
 set autowrite                   " Automatically save before :next, :make etc.
+set expandtab                   " Convert tabs to spaces
+
+if has("autocmd")
+  filetype plugin indent on     " Set file types automatically
+endif
 
 
 """"""""""""""""""""""

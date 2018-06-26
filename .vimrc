@@ -24,6 +24,8 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+set splitbelow                    " set :sp to open below
+set splitright                    " set :vsp to open right
 
 if has("autocmd")
   filetype plugin indent on       " Set file types automatically

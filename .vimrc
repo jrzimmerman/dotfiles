@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'sheerun/vim-polyglot'     " lots of syntax highlighting
   Plug 'fatih/vim-go'             ", { 'do': ':GoInstallBinaries' }
   Plug 'mhartington/oceanic-next'
+  Plug 'vim-airline/vim-airline'
 call plug#end()
 
 

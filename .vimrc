@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'w0rp/ale'
   Plug 'sheerun/vim-polyglot'     " lots of syntax highlighting
   Plug 'fatih/vim-go'             ", { 'do': ':GoInstallBinaries' }
+  Plug 'mhartington/oceanic-next'
   Plug 'vim-airline/vim-airline'
 call plug#end()
 
@@ -30,3 +31,14 @@ set splitright                    " set :vsp to open right
 if has("autocmd")
   filetype plugin indent on       " Set file types automatically
 endif
+
+
+""""""""""""""""""""""
+"        Theme       "
+""""""""""""""""""""""
+syntax enable
+set t_Co=256                      " for vim 7
+if (has("termguicolors"))         " for vim 8
+  set termguicolors
+endif
+colorscheme OceanicNext

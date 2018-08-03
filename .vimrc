@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'fatih/vim-go'             ", { 'do': ':GoInstallBinaries' }
   Plug 'mhartington/oceanic-next'
   Plug 'vim-airline/vim-airline'
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 

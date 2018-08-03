@@ -1,13 +1,50 @@
-// Place your settings in this file to overwrite the default settings
 {
-	// Controls the font family.
   "editor.fontFamily": "'SourceCodePro-Regular', Menlo, Monaco, 'Courier New', monospace",
-	// Controls the font size.
 	"editor.fontSize": 16,
-	// The number of spaces a tab is equal to.
   "editor.tabSize": 2,
+  "sync.autoUpload": true,
+  "sync.lastDownload": "2018-08-02T14:23:48.291Z",
+  "sync.forceDownload": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": true,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": false
+  },
+  "sync.gist": "abf2f336c15df20c3ca7a6d0a09fd7b7",
+  "sync.lastUpload": "2018-08-03T16:00:29.181Z",
+  "sync.autoDownload": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "python.pythonPath": "/usr/local/opt/python/libexec/bin/python",
   "vsicons.dontShowNewVersionMessage": true,
   "vsicons.projectDetection.autoReload": true,
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "vscode-icons"
+  "git.ignoreLegacyWarning": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "prettier.eslintIntegration": true,
+  "rust.rustup": {
+    "toolchain": "stable-x86_64-apple-darwin",
+    "nightlyToolchain": "nightly-x86_64-apple-darwin"
+  },
+  "rust.mode": "rls",
+  "rust.rls": {
+    "useRustfmt": true
+  },
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "gitlens.keymap": "alternate",
+  "gitlens.historyExplorer.enabled": true
 }

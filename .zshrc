@@ -109,16 +109,15 @@ export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# Python
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Yarn
 export PATH="$PATH:`yarn global bin`"
+
+# z https://github.com/rupa/z
+. /usr/local/etc/profile.d/z.sh
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"

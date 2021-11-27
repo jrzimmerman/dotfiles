@@ -20,3 +20,5 @@
   dump = cat-file -p
 [credential]
   helper = osxkeychain
+[init]
+	defaultBranch = main

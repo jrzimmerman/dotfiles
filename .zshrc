@@ -116,7 +116,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 # Golang
 export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec # homebrew version (mac only)
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin # homebrew version (mac only)
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

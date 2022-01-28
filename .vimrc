@@ -1,10 +1,11 @@
 call plug#begin('~/.vim/plugged')
   Plug 'w0rp/ale'
   Plug 'sheerun/vim-polyglot'     " lots of syntax highlighting
-  Plug 'fatih/vim-go'             ", { 'do': ':GoInstallBinaries' }
+  Plug 'fatih/vim-go'             " , { 'do': ':GoInstallBinaries' }
   Plug 'mhartington/oceanic-next'
   Plug 'vim-airline/vim-airline'
   Plug 'airblade/vim-gitgutter'
+  Plug 'junegunn/fzf'             " , { 'do': { -> fzf#install() } }
 call plug#end()
 
 

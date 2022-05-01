@@ -136,4 +136,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # fzf https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias preview="fzf --preview 'bat --color=always {}'"

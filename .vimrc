@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'sheerun/vim-polyglot'     " lots of syntax highlighting
   Plug 'fatih/vim-go'             " , { 'do': ':GoInstallBinaries' }
   Plug 'rust-lang/rust.vim'
-  Plug 'mhartington/oceanic-next'
+  Plug 'haishanh/night-owl.vim'
   Plug 'vim-airline/vim-airline'
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/fzf'             " , { 'do': { -> fzf#install() } }
@@ -44,4 +44,4 @@ set t_Co=256                      " for vim 7
 if (has("termguicolors"))         " for vim 8
   set termguicolors
 endif
-colorscheme OceanicNext
+colorscheme night-owl

@@ -1,13 +1,13 @@
 [user]
 	name = Justin Zimmerman
 	email = zimmy130@gmail.com
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
 [init]
 	defaultBranch = main
-[help]
-	autocorrect = 1
 [color]
 	ui = auto
 [help]
@@ -25,3 +25,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[push]
+	autoSetupRemote = true

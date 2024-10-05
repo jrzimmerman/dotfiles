@@ -111,6 +111,10 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="justin"
 export EDITOR="vim"
 
+# Aliases
+#alias vi="nvim"
+#alias vim="nvim"
+
 # Homebrew
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 eval "$(/opt/homebrew/bin/brew shellenv)" # M1 Mac version
@@ -121,8 +125,8 @@ export PATH=$PATH:$GOPATH/bin
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Yarn
 export PATH="$PATH:`yarn global bin`"
@@ -134,6 +138,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 . /opt/homebrew/etc/profile.d/z.sh
 
 # fzf https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
-alias preview="fzf --preview 'bat --color=always {}'"
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

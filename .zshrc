@@ -72,7 +72,6 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  z                         # https://github.com/rupa/z
   # zsh-autosuggestions     # https://github.com/zsh-users/zsh-autosuggestions
   # zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
 )
@@ -147,4 +146,3 @@ eval "$(pyenv virtualenv-init -)"
 
 # zoxide - KEEP AT THE END OF FILE
 eval "$(zoxide init zsh)"
-

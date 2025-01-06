@@ -105,15 +105,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
 ########################################
 # Custom Settings
 ########################################
 DEFAULT_USER="justin"
-export EDITOR="vim"
 
-# Aliases
-#alias vi="nvim"
-#alias vim="nvim"
+alias vi="nvim"
+alias vim="nvim"
+export EDITOR="nvim"
+
 
 # Homebrew
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
@@ -134,9 +135,6 @@ export PATH="$PATH:`yarn global bin`"
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# z https://github.com/rupa/z
-. /opt/homebrew/etc/profile.d/z.sh
-
 # fzf https://github.com/junegunn/fzf
 source <(fzf --zsh)
 
@@ -145,3 +143,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+
+# zoxide - KEEP AT THE END OF FILE
+eval "$(zoxide init zsh)"
+

@@ -120,11 +120,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)" # M1 Mac version
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -136,6 +131,12 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+  eval "`fnm env`"
+fi
 
 # zoxide - KEEP AT THE END OF FILE
 eval "$(zoxide init zsh)"

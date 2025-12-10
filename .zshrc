@@ -104,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 ########################################
 # Custom Settings
 ########################################
@@ -114,9 +113,7 @@ alias vi="nvim"
 alias vim="nvim"
 export EDITOR="nvim"
 
-
 # Homebrew
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 eval "$(/opt/homebrew/bin/brew shellenv)" # M1 Mac version
 
 # Golang
@@ -127,9 +124,6 @@ export PATH=$PATH:$GOPATH/bin
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# Yarn
-export PATH="$PATH:`yarn global bin`"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -142,7 +136,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
 
 # zoxide - KEEP AT THE END OF FILE
 eval "$(zoxide init zsh)"

@@ -121,7 +121,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # Rust
-export PATH="$HOME/.cargo/bin:$PATH"
+. "$HOME/.cargo/env"
 
 # fzf https://github.com/junegunn/fzf
 source <(fzf --zsh)

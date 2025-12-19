@@ -123,14 +123,12 @@ export PATH=$PATH:$GOPATH/bin
 # Rust
 . "$HOME/.cargo/env"
 
+# Python uv
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+
 # fzf https://github.com/junegunn/fzf
 source <(fzf --zsh)
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # fnm
 FNM_PATH="/opt/homebrew/opt/fnm/bin"

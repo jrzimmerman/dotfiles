@@ -1,0 +1,6 @@
+# Partial baseline: merge these settings into the machine's ~/.codex/config.toml
+# rather than replacing it. The context window is capped at 272000 tokens to keep
+# requests under OpenAI's 272K long-context pricing tier.
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+model_context_window = 272000

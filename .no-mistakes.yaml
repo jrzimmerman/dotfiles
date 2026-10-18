@@ -1,0 +1,2 @@
+# This repository intentionally has no CI; see https://kunchenguid.github.io/no-mistakes/reference/repo-config/#no_ci
+no_ci: true

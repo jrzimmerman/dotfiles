@@ -113,6 +113,10 @@ alias vi="nvim"
 alias vim="nvim"
 export EDITOR="nvim"
 
+
+# Docker Desktop CLI
+export PATH="$HOME/.docker/bin:$PATH"
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)" # M1 Mac version
 
@@ -128,13 +132,49 @@ eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
 # fzf https://github.com/junegunn/fzf
+# # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# fnm
-FNM_PATH="/opt/homebrew/opt/fnm/bin"
-if [ -d "$FNM_PATH" ]; then
-  eval "`fnm env`"
-fi
+# nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/Users/justin/.bun/_bun" ] && source "/Users/justin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# opencode
+export PATH=/Users/justin/.opencode/bin:$PATH
+
+# alias opus46="claude --model='claude-opus-4-6[1m]' --effort=high"
+alias opus48="claude --model='claude-opus-4-8[1m]' --effort=high"
+alias opus='opus48'
+
+
+alias fable5="claude --model='claude-fable-5[1m]' --effort=high"
+alias fable='fable5'
+
+# alias sonnet46="claude --model='claude-sonnet-4-6[1m]' --effort=high"
+alias sonnet5="claude --model='claude-sonnet-5[1m]' --effort=high"
+alias sonnet='sonnet5'
+
+alias cc="claude"
+alias co="codex"
 
 # zoxide - KEEP AT THE END OF FILE
 eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/justin/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
+# machine-local secrets and overrides (untracked)
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"

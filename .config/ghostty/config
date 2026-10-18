@@ -1,11 +1,19 @@
-font-family = JetBrainsMono Nerd Font
-font-size = 14
+font-family = Hack Nerd Font
+font-size = 15
 
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
 theme = dark:NightOwlDark,light:NightOwlLight
+# Automatic dark/light switching
+# theme = dark:rose-pine-moon,light:rose-pine-dawn
+
+# Set overall background opacity (value between 0.0 for invisible and 1.0 for solid)
+# background-opacity = 0.80
+
+# background-blur = true
+
 
 window-height = 40
 window-width = 160

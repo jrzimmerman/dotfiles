@@ -12,9 +12,6 @@
         "CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS": "1",
         "CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS": "1"
       }
-    },
-    "monarch": {
-      "url": "https://api.monarch.com/mcp"
     }
   }
 }
